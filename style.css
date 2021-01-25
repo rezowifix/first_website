@@ -1,0 +1,104 @@
+body{
+	background-image: url('Images/texture.png');
+	/*background-color:pink;*/
+}
+
+.paragraphe{
+		color:blue;
+
+	}
+
+#titre{
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px #BCBCBC;
+	text-align:center;
+}
+
+.petitTitre{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+#loisirs{
+	min-width: 200px;
+	max-width: 800px;
+	position: relative; 
+	left: 200px;
+	border-width:2px;
+	border-style: dashed;
+	border-color: red;
+	background-image: url('Images/texture.png');
+	background-size: 80px, 80px;
+}
+
+#etudes{
+	position: relative;
+	animation-name: animationDuBouzin;
+	animation-duration: 2s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+#nav{
+	position: relative;
+	top: 150px;
+	left: 300px;
+	background-image: url('Images/texture.png');
+	background-size: 500px, 200px;
+	background-repeat: no-repeat;
+}
+
+#imgListe{
+	position: relative;
+	right: 50px;
+}
+
+#shitpost{
+	transition: all;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+#shitpost:hover{
+	filter: saturate(8) invert(1) brightness(2);
+	transform: rotate(20deg) translate(300px) scale(3, 0.5);
+}
+
+@keyframes animationDuBouzin {
+	0%{
+		top:0px; 
+		left: 0px;
+		background: red; 
+	}
+	25%{
+		top: 15px;
+		left: 30px;
+		background: yellow;
+	}
+	50%{
+		top: 0px;
+		left: 60px;
+		background: green;
+	}
+	75%{
+		transform: rotate(360deg);
+		background: orange;
+	}
+	100%{
+		transform: rotate(720deg);
+		background: red;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	body{
+		background: white;
+	}
+	#shitpost{
+		top: 120px;
+		left: 60px;
+	}
+} 
